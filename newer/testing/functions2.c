@@ -83,7 +83,7 @@ int print_reverse(va_list types, char buffer[],
 	{
 		UNUSED(precision);
 
-		str = ")Null(";
+		str = "(null)";
 	}
 	for (e = 0; str[e]; e++)
 		;
