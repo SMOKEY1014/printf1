@@ -28,6 +28,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 
 	if (fmt_types[i].fmt == '\0')
 	{
+		/*
 		if (fmt[*ind] == '\0')
 			return (-1);
 		unknow_len += write(1, "%%", 1);
@@ -44,6 +45,9 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 		}
 		unknow_len += write(1, &fmt[*ind], 1);
 		return (unknow_len);
+		*/
+		
+
 	}
 	return (printed_chars);
 }
